@@ -1,0 +1,59 @@
+# SPDX-FileCopyrightText: 2026 CoreWeave
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "translocate"
+dynamic = ["version"]
+description = "Splice installed Python packages between environments."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSES/*"]
+authors = [{ name = "CoreWeave" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: System :: Installation/Setup",
+]
+
+[project.scripts]
+translocate = "translocate.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/coreweave/translocate"
+Repository = "https://github.com/coreweave/translocate"
+Issues = "https://github.com/coreweave/translocate/issues"
+
+[dependency-groups]
+dev = ["pre-commit"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic.version]
+attr = "translocate._version.__version__"
+
+[tool.black]
+line-length = 80
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 80
+known_first_party = ["translocate"]
+
+[tool.ruff]
+line-length = 80
+target-version = "py310"
