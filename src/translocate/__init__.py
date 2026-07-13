@@ -1,6 +1,7 @@
-# SPDX-FileCopyrightText: 2026 CoreWeave
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
 #
 # SPDX-License-Identifier: MIT
+# SPDX-PackageName: translocate
 
 """Translocate installed Python distributions between locations."""
 

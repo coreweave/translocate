@@ -1,6 +1,7 @@
-# SPDX-FileCopyrightText: 2026 CoreWeave
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
 #
 # SPDX-License-Identifier: MIT
+# SPDX-PackageName: translocate
 
 """Reconcile the inventory against the live filesystem.
 

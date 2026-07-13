@@ -1,6 +1,7 @@
-# SPDX-FileCopyrightText: 2026 CoreWeave
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
 #
 # SPDX-License-Identifier: MIT
+# SPDX-PackageName: translocate
 
 """Scheme inversion, path classification, and root_is_purelib."""
 
