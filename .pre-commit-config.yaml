@@ -33,3 +33,7 @@ repos:
     rev: v6.2.0
     hooks:
       - id: reuse-lint-file
+        # Legal documents carry their own terms;
+        # they are not necessarily offered under
+        # the repository license.
+        exclude: ^(CLA|CONTRIBUTING)\.md$
