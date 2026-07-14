@@ -1,6 +1,7 @@
-# SPDX-FileCopyrightText: 2026 CoreWeave
+# SPDX-FileCopyrightText: 2026 CoreWeave, Inc.
 #
 # SPDX-License-Identifier: MIT
+# SPDX-PackageName: translocate
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -33,3 +34,7 @@ repos:
     rev: v6.2.0
     hooks:
       - id: reuse-lint-file
+        # Legal documents carry their own terms;
+        # they are not necessarily offered under
+        # the repository license.
+        exclude: ^(CLA|CONTRIBUTING)\.md$
